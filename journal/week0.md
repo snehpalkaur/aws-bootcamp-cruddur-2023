@@ -28,5 +28,7 @@ I created Logical Architecture Design using Lucid Charts. Follwoing is the link 
 
 ![Image of Logical Diagram](assets/week0_logicalDesign.png)
 
+## *References:*
+
 
 
