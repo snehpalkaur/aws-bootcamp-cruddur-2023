@@ -33,6 +33,8 @@ I created Logical Architecture Design using Lucid Charts. Follwoing is the link 
 ![Image of Logical Diagram](assets/week0_logicalDesign.png)
 
 ## *References:*
+ - [AWS Command Line](https://aws.amazon.com/cli/)
+ - [AWS Free Cloud Project Bootcamp](https://www.youtube.com/watch?v=8b8SvQHc4Pk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
 
 
