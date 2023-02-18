@@ -29,7 +29,7 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 ```
-In first command, I downloaded file using `` curl `` command and saved it on local machine by using **-o** parameter. After downloading, *unzip* was used to unzip the file. Fianlly, I executed bash script ``` install ``` to complete the installation.
+In first command, I downloaded file using `` curl `` command and saved it on local machine by using **-o** parameter. After downloading, ``unzip`` was used to unzip the file. Fianlly, I executed bash script ``` install ``` to complete the installation.
 
 To verify the installation, I issued ``` aws account get-contact-information ``` command in terminal.
 
