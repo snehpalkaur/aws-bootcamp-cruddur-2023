@@ -3,7 +3,7 @@
         "Amount": "1",
         "Unit": "USD"
     },
-    "BudgetName": "MyCreditSpendBudget",
+    "BudgetName": "MyZero-SpendBudget",
     "BudgetType": "COST",
     "CostFilters": {
         "TagKeyValue": [
