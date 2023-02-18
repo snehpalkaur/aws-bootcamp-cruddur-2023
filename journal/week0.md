@@ -13,7 +13,20 @@ I created two budgets- one is MyZero-SpendBudget of $1 to avoid cost using servi
 
 ![Image of my budgets](assets/week0_budgets.png)
 
-## 3.Install a AWS CLI
+## 3.Install AWS CLI in GitPod
+
+To install AWS CLI, I followed step by step guide using [AWS CLI documentation for Linux](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). To install AWS CLI, I issued the following commands in my GitPod terminal:
+
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+```
+In first command, I downloaded file using *curl* command and saved it on our local machine by using **-o** parameter. After downloading, *unzip* was used to unzip the file.Fianlly, I executed bash script *install* to complete the installation.
+
+To verify the installation, I issued *aws account get-contact-information* command in terminal.
+
 
 ## 4.Cruddur_Conceptual Architecture Design
 
