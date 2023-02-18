@@ -2,6 +2,10 @@
 
 ## 1.Create a Billing Alarm
 
+Created a billing alarm using GUI.
+
+![Biiling_Alarm](assets/week0_billing-alarm.png)
+
 
 ## 2.Create a Budget
 
