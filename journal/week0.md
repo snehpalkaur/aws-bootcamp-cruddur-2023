@@ -1,5 +1,11 @@
 # Week 0 — Billing and Architecture
 
+In the first week of boot camp, I was able to successfully complete a range of tasks: 
+- Using the GUI and Command Line Interface, I was able to set up budgets, SNS, and alarms. 
+- Installed AWS CLI in Gitpod 
+- Learned about Architecture frameworks and created conceptual, logical designs using Lucid Chart.
+- To enhance the security of my account, I set up MFA on both my root user and IAM user account. Also, I was able to successfully generate Access Key for my IAM user account.
+
 ## 1.Create a Billing Alarm
 
 Created a billing alarm using GUI.
