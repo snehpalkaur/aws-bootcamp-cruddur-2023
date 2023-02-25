@@ -8,7 +8,7 @@ In order to push your image to Docker Hub, you need to login on Docker client us
 
 ![username](assets/login_d.png)
 
-To tag an image, use this command: ``docker tag imageid username/repositoryname``
+To tag an image, use this command: ``docker tag imageid username/repositoryname:latest``
 
 ![username](assets/d_tag.png)
 
