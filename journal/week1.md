@@ -2,7 +2,7 @@
 
 ### Push and tag a image to DockerHub 
 
-To push and tag a image to Docker Hub, you need to first register an account on Docker Hub. After that, create a repository in DockerHub. Afterwards, build an image on your local machine from DockerFile that you would like to push to the repository you created on Docker Hub. 
+> To push and tag a image to Docker Hub, you need to first register an account on Docker Hub. After that, create a repository in DockerHub. Afterwards, build an image on your local machine from DockerFile that you would like to push to the repository you created on Docker Hub. 
 
 In order to push your image to Docker Hub, you need to login on Docker client using the following command: ``docker login --username=yourUsername``
 
