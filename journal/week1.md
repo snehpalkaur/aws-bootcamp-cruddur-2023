@@ -16,7 +16,7 @@ To push an image to DockerHub, use `` docker push username/repositoryname :lates
 
 ![username](assets/d_push.png)
 
-Finally, you should see in your Repository:
+Finally, you should see an image in your Repository:
 
 ![username](assets/d-hub.png)
 
