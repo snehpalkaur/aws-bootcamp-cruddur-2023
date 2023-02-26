@@ -1,5 +1,7 @@
 # Week 1 — App Containerization
 
+> :memo: *During this week, I gained knowledge about the significance of app containerization and its benefits. I created separate Dockerfiles for backend-flask and frontend-react, and orchestrated the containers using a docker-compose.yml file. Additionally, I familiarized myself with Docker's best practices, such as multi-staging and implementing health checks in Dockerfiles and learned the process of pushing images to DockerHub.*
+
 ## Create a Docker file for backend-flask
 
 Following is the Dockerfile that is used to build a Docker image for a backend-flask.
