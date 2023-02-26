@@ -38,7 +38,7 @@ To verify the installation, I issued ``` aws account get-contact-information ```
 
 I created Conceptual Architecture Design using Lucid Charts. Following is the link to Lucid Chart Design-
 
-[Cruddur/Conceptual Diagram](https://lucid.app/lucidchart/74ae796f-8427-41f9-b995-1c86bbdf274b/edit?viewport_loc=-451%2C-398%2C2716%2C1276%2C0_0&invitationId=inv_819b040f-b471-45c9-bf66-16023dd4e532)
+🔗[Cruddur/Conceptual Diagram](https://lucid.app/lucidchart/74ae796f-8427-41f9-b995-1c86bbdf274b/edit?viewport_loc=-451%2C-398%2C2716%2C1276%2C0_0&invitationId=inv_819b040f-b471-45c9-bf66-16023dd4e532)
 
 ![Image of Conceptual Diagram](assets/week0_conceptualDesign.png)
 
@@ -47,7 +47,7 @@ I created Conceptual Architecture Design using Lucid Charts. Following is the li
 
 I created Logical Architecture Design using Lucid Charts. Follwoing is the link to Lucid Chart Diagram
 
-[Cruddur/Logical Diagram](https://lucid.app/lucidchart/cca7a133-4faf-41cd-8df5-4e932ac7302d/edit?viewport_loc=-2381%2C-105%2C4924%2C2046%2C0_0&invitationId=inv_770182d9-a8ed-4ee9-a603-74756f0c9d7e)
+🔗[Cruddur/Logical Diagram](https://lucid.app/lucidchart/cca7a133-4faf-41cd-8df5-4e932ac7302d/edit?viewport_loc=-2381%2C-105%2C4924%2C2046%2C0_0&invitationId=inv_770182d9-a8ed-4ee9-a603-74756f0c9d7e)
 
 ![Image of Logical Diagram](assets/week0_logicalDesign.png)
 
