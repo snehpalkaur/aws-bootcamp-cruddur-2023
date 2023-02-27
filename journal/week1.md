@@ -126,6 +126,52 @@ Successfully configured dynamoDB and PostgreSQL
 
 👉 Here is the link for the commits: [Configuration of DynamoDB and PostgreSQL](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/bb3bbfdd22128cb0af05b244adf82ba09f001362)
 
+## Run the dockerfile CMD as an external script
+
+Executed CMD as an external script in backend-flask
+
+🔗 [Link for Code commit](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/da6f3a2f349645f214edc3f94a92356ba602fcf9)
+
+To create a ``CMD`` as an external script, create a bash file in the same directory, for example, ``run.sh``. Add the instructions in that file such in our case:
+
+```bash
+#!/bin/bash
+
+python3 -m flask run --host=0.0.0.0 --port=4567
+```
+
+In dockerfile, use the following syntax:
+```dockerfile
+FROM python:3.10-slim-buster
+
+WORKDIR /backend-flask
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+ENV FLASK_ENV=development
+
+EXPOSE ${PORT}
+RUN chmod +x ./run.sh
+CMD [ "./run.sh" ]
+
+#CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
+
+
+```
+## Use multi-stage building for a Dockerfile build
+
+In Dockerfiles, we use multi-stage builds to separate the build environment from the production environment. Multi-stage build helps to reduce the size of the final image and improves the security by only including the necessary dependencies and files in the production image.
+
+:link: [Implemented multi-Stage for frontend-react-js](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/bfb7d178cec6cfe2f94762959e05346b5006f140)
+
+## Implement a healthcheck in the Docker compose file
+
+Health checks in Docker Compose files are used to ensure that the services running inside the containers are healthy and functioning properly. We can use ``docker-compose ps`` to see the health of containers.
+
+🔗 [Implemented HealthCheck in Docker Compose](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/635799442b0bdd1aa63d437bd67aea53b69496db)
 
 ## Push and tag a image to DockerHub 
 
