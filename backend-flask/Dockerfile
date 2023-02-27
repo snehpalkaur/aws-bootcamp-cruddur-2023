@@ -10,6 +10,7 @@ COPY . .
 ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
+RUN chmod +x run.sh
 CMD [ "./run.sh" ]
 
 #CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
