@@ -132,7 +132,7 @@ Executed CMD as an external script in backend-flask
 
 🔗 [Link for Code commit](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/da6f3a2f349645f214edc3f94a92356ba602fcf9)
 
-To create a ``CMD`` as an external script, create a bash file in the same directory, for example, ``run.sh``. Add the instructions in that file such in our case:
+To create a ``CMD`` as an external script, create a bash file in the same directory, for example, ``run.sh``. Add the instructions in that file:
 
 ```bash
 #!/bin/bash
