@@ -16,8 +16,8 @@ from services.create_message import *
 from services.show_activity import *
 
 #x-ray......
-from aws_xray_sdk.core import xray_recorder
-from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+#from aws_xray_sdk.core import xray_recorder
+#from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
 
 #honeycomb........
@@ -35,9 +35,9 @@ import rollbar.contrib.flask
 from flask import got_request_exception
 
 #cloudwatch logs
-import watchtower
-import logging
-from time import strftime
+#import watchtower
+#import logging
+#from time import strftime
 
 # Configuring Logger to Use CloudWatch
 #LOGGER = logging.getLogger(__name__)
@@ -57,8 +57,8 @@ provider.add_span_processor(processor)
 
 
 #x-ray........
-xray_url = os.getenv("AWS_XRAY_URL")
-xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+#xray_url = os.getenv("AWS_XRAY_URL")
+#xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 
 #show this in the logs within the backend-flask app STDOUT
@@ -72,7 +72,7 @@ tracer = trace.get_tracer(__name__)
 app = Flask(__name__)
 
 #x-ray
-XRayMiddleware(app, xray_recorder)
+#XRayMiddleware(app, xray_recorder)
 
 #rollbar
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')

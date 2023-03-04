@@ -7,10 +7,18 @@ tracer = trace.get_tracer("home.activities")
 class HomeActivities:
   def run():
     #Logger.info("HomeActivities")
-    with tracer.start_as_current_span("home-activities-mock-data"): 
+    with tracer.start_as_current_span("home-activities-mock-data")as outer_span:
+      with tracer.start_as_current_span("user_info") as inner_span:
+        outer_span.set_attribute("outer", True)
+        inner_span.set_attribute("inner", True) 
       span = trace.get_current_span()
+     
+    
       now = datetime.now(timezone.utc).astimezone()
+      #user = {'id': '12345'}
       span.set_attribute("app.now", now.isoformat())
+      #span.set_attribute("user.id", user['id'])
+      
       results = [{
         'uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
         'handle':  'Andrew Brown',
@@ -50,5 +58,6 @@ class HomeActivities:
         'replies': []
       }
     ]
+    span.set_attribute("app.uuid", results[0]['uuid'])
     span.set_attribute("app.result_length", len(results))
     return results
