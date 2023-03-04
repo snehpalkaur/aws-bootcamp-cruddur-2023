@@ -15,5 +15,7 @@ Implemented AWS X-ray into backend flask-app - 🔗 [Instrumented AWS X-ray](htt
 
 ## Install WatchTower and write a custom logger to send application log data to CloudWatch Log group
 
+🔗 [Implemented Cloudwatch](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/80a38b6f50ce8d4f707b6630cc1e13b4fdadfb52)
+
 
 ## Instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span
