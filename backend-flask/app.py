@@ -14,6 +14,11 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
+#x-ray......
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
+
 #honeycomb........
 from opentelemetry import trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
@@ -34,6 +39,11 @@ provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter())
 provider.add_span_processor(processor)
 
+
+#x-ray........
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+XRayMiddleware(app, xray_recorder)
 
 #show this in the logs within the backend-flask app STDOUT
 simple_processor = SimpleSpanProcessor(ConsoleSpanExporter())
