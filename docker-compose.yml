@@ -8,6 +8,8 @@ services:
       OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
       OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=LuynFDtpNycLp3tow7r3mB"
       ROLLBAR_ACCESS_TOKEN: "ead099ab50fd45189b82d1e947c3c3cc"
+      AWS_XRAY_URL: "*4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}*"
+      AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
     build: ./backend-flask
     ports:
       - "4567:4567"
