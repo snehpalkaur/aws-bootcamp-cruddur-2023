@@ -8,7 +8,9 @@ What is Open Telemetry?
 
 *It is a set of tools and best practices for collecting and exporting <ins> telemetry data</ins> from applications*
 
-> **In software development, telemetry refers to the collection of data about the performance, health, and usage of an application or service, which can be used for monitoring, debugging, and optimization purposes.**
+>**Note** 
+>
+>**In software development, telemetry refers to the collection of data about the performance, health, and usage of an application or service, which can be used for monitoring, debugging, and optimization purposes.**
 
 What is HoneyComb?
 
