@@ -1,5 +1,9 @@
 # Week 2 — Distributed Tracing
 
+What is Distributed Tracing and how it is different form Observability?
+
+*Distributed tracing is a specific technique for tracking requests through a distributed system, while observability is a broader concept that includes various techniques and tools for understanding and troubleshooting complex systems*
+
 > 📝 *Throughout the course of this week, I acquired knowledge on distributed tracing and its implementation using various platforms such as Honeycomb, AWS X-Ray, and Rollbar. Additionally, I successfully configured Cloudwatch to monitor the traces within the application.*
 
 ## Instrument backend flask application to use Open Telemetry (OTEL) with Honeycomb.io as the provider
@@ -41,3 +45,4 @@ Implemented AWS X-ray into backend flask-app - 🔗 [Instrumented AWS X-ray](htt
 
 
 ## Instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span
+🔗 [Added a custom span](https://github.com/snehpalkaur/aws-bootcamp-cruddur-2023/commit/b19b15b9ecf56a86aa66aaeb31785efc8a4d0653)
