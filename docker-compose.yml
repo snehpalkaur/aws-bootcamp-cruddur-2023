@@ -27,7 +27,7 @@ services:
     environment:
   
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
-      REACT_APP_PROJECT_REGION: "ca-central-1"
+      REACT_APP_AWS_PROJECT_REGION: "ca-central-1"
       REACT_APP_AWS_COGNITO_REGION: "ca-central-1"
       REACT_APP_AWS_USER_POOLS_ID: "ca-central-1_mmo4Ne5J3"
       REACT_APP_CLIENT_ID: "65bqpaku4vd1jmv0she5narfpo"
